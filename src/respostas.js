@@ -3,7 +3,7 @@
   * para selecionar na tabela cliente todos os clientes 
   * que moram em Jaboatão e Olinda
   */
-export const r1 = `select nome, telefone, cidade 
+export const r1 = `select nome, telefone, cidade
 from clientes 
 where cidade in ('Olinda', 'Jaboatão dos Guararapes');`
 
