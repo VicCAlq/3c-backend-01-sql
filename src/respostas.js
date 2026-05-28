@@ -6,6 +6,7 @@
 export const r1 = `SELECT cidade FROM clientes
 where cidade in ('jaboatão dos Guararapes',' Olinda')`;
 
+
 /* Exercício 2:
   * Escreva entre as áspas da variável "r2" o comando 
   * para ordenar a tabela de produtos a partir do preço 
