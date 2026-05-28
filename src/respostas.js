@@ -17,8 +17,8 @@ order by preco desc;
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
-  * para filtrar os pedidos entre os meses de Outubro (10)
-  * e Novembro (11)
+  * para filtrar os pedidos entre os meses de Outubro (12)
+  * e Novembro (18)
   */
 export const r3 = SELECT from pedidos
 where data_pedidos BETWEEN '2025/12/12' AND '2025/12/18'
