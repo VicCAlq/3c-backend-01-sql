@@ -24,5 +24,9 @@ export const r3 = `SELECT * FROM pedidos WHERE data_pedido BETWEEN '2025-12-12' 
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `
+SELECT p2.id, p2.nome, p2.vendedor, p2.descricao, p2.preco, ip.quantidade , p2.categoria
+FROM itens_pedido ip 
+INNER JOIN produtos p2 ON ip.produto_id  = p2.id;
+`
 
