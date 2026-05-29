@@ -27,8 +27,20 @@ where data_pedido between '2025-12-12' and '2025-12-18';`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
-  * para juntar informações da tabelas de produtos com
-  * a tabela de pedidos
+  * para juntar informações da tabelas de itens pedidos com
+  * a tabela de produtos
   */
-export const r4 = ``
+export const r4 = 
+`
+select 
+ip.produto_id,
+ip.quantidade, 
+ip.preco_unitario, 
+p.id, 
+p.nome, 
+p.preco
+from itens_pedido ip 
+inner join produtos p
+on ip.produto_id = p.id;
+`
 
