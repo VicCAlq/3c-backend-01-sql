@@ -23,10 +23,10 @@ order by preco desc;`
 export const r3 = `select data_pedido from pedidos 
 WHERE data_pedido between '2025-12-12' and '2025-12-18'`
 
-/* Exercício 1:
+/* Exercício 4:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
-  * a tabela de pedidos
+  * a tabela itens_pedido
   */
 export const r4 = ``
 
