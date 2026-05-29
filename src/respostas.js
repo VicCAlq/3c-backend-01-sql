@@ -21,7 +21,16 @@ export const r3 = `select * from pedidos where data_pedido between '2025-12-12' 
 /* Exercício 4:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
-  * a tabela de pedidos
+  * a tabela de itens pedidos
   */
-export const r4 = ``
+export const r4 = `select
+pr.id as id_produto,
+pr.nome, pr.vendedor, pr.preco,
+pr.descricao, pr.categoria,
+ip.id as itens_pedido_id,
+ip.pedido_id, ip.produto_id,
+ip.quantidade, ip.preco_unitario
+from produtos pr
+inner join itens_pedido ip
+on pr.id = ip.produto_id;`
 
