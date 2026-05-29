@@ -19,12 +19,16 @@ export const r2 = `SELECT * FROM produtos ORDER BY preco DESC`;
   * para filtrar os pedidos entre os meses de Outubro (10)
   * e Novembro (11)
   */
-export const r3 = ``
+export const r3 = `SELECT * FROM pedidos WHERE data_pedido BETWEEN '2025-12-12' AND '2025-12-18';`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `
+SELECT p2.id, p2.nome, p2.vendedor, p2.descricao, p2.preco, ip.quantidade , p2.categoria
+FROM itens_pedido ip 
+INNER JOIN produtos p2 ON ip.produto_id  = p2.id;
+`
 
