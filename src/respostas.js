@@ -29,7 +29,16 @@ where data_pedido between '2025-12-12' and '2025-12-18';`
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `select
+pr.nome,
+pr.preco,
+pr.vendedor,
+i.pedido_id,
+i.produto_id,
+i.quantidade
+from produtos pr
+join itens_pedido i 
+on i.pedido_id = pr.id;`
 
 
 
