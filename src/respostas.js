@@ -11,8 +11,9 @@ export const r1 = export const r1 = SELECT from clientes; where cidade in
   * para ordenar a tabela de produtos a partir do preço 
   * de cada item, em ordem do mais caro par ao mais barato
   */
-export const r2 = SELECT from produtos 
-where preco <= 100
+export const r2 = SELECT from produtos
+where preco < 100
+and preco < 50
 order by preco desc;
 
 /* Exercício 3:
