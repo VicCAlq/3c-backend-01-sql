@@ -12,7 +12,7 @@ export const r1 = export const r1 = SELECT from clientes; where cidade in
   * de cada item, em ordem do mais caro par ao mais barato
   */
 export const r2 = SELECT from produtos 
-where preco <= 999999
+where preco <= 100
 order by preco desc;
 
 /* Exercício 3:
