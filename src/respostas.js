@@ -26,7 +26,7 @@ where data_pedido BETWEEN '2025-10-01'and '2025-11-30'; `
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
-  * a tabela de pedidos
+  * a tabela de itens_pedidos
   */
-export const r4 = ``
+export const r4 = `inner join`
 
