@@ -44,5 +44,8 @@ WHERE data_pedido betwen
   */
 export const r4 = 
 `
-
+SELECT *
+FROM produtos
+INNER JOIN itens_pedidos
+ON produtos.id = itens_pedidos.produto_id
 `
