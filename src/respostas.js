@@ -47,7 +47,7 @@ ip.quantidade,
 ip.preco_unitario
 from produtos pr 
 left JOIN itens_pedido ip
-on ip.produto_id = pr.id;`
+on ip.produto_id = pr.id;` 
 
 //produtos = id,nome,vendedor,preco,
 // descricao, categoria       
